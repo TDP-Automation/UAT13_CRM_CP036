@@ -202,7 +202,8 @@ End Sub
 Sub FlujoWIC()
 
 	If DataTable("e_WIC_ValidaCli",dtLocalSheet)="SI" Then
-		RunAction "WIC", oneIteration
+		
+  RunAction "WIC", oneIteration
 	End If
 	'	    	'Se da Clic en el botón continuar
 '			If UIAWindow("Ejecutivo de interacción").UIAWindow("Autenticación del Cliente").UIAObject("Movistar").UIAObject("Consulta previa").Exist(3) And UIAWindow("Ejecutivo de interacción").UIAWindow("Autenticación del Cliente").UIAObject("Movistar").UIAButton("Continuar").Exist(3) Then
